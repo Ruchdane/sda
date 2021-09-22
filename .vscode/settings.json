@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "limits": "cpp",
+        "type_traits": "cpp",
+        "minunit.h": "c",
+        "typeinfo": "c",
+        "sda.h": "c",
+        "cstdio": "c"
+    }
+}
