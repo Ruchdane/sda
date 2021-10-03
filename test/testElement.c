@@ -50,7 +50,8 @@ static char *Test_Liberer_Un_Element_Creer_Pour_Un_Entier(){
     int value = 2,result = 0;
     element = createElement((void *)value);
     result = (int)freeElement(element);
-    // mu_assert(result == value,"La valeur renvoye apres liberation est differente de celle fournie lors de la creation");
+    mu_assert(result == value,"La valeur renvoye apres liberation est differente de celle fournie lors de la creation");
+    return 0;
 }
 
 int main(void){
@@ -58,6 +59,6 @@ int main(void){
     mu_run_test(Test_Creer_Un_Element_Pour_Un_Entier);
     mu_run_test(Test_Creer_Un_Element_Pour_Un_Pointer_Sur_Entier);
     mu_run_test(Test_Creer_Un_Element_Pour_Un_Pointer_Sur_Une_Structure_Quelconque);
-    // mu_run_test(Test_Liberer_Un_Element_Creer_Pour_Un_Entier);
+    mu_run_test(Test_Liberer_Un_Element_Creer_Pour_Un_Entier);
     mu_result();
 }

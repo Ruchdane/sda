@@ -23,6 +23,10 @@ testElement: testElement.o element.o | minunit.h $(BINDIR)
 	$(CC) $(CFLAGS) -o bin/$@ bin/testElement.o bin/element.o
 	././bin/testElement
 
+testList: testList.o element.o list.o | minunit.h $(BINDIR)
+	$(CC) $(CFLAGS) -o bin/$@ bin/testList.o bin/element.o bin/list.o
+	././bin/testList
+
 
 $(BINDIR):
 	mkdir $(BINDIR)

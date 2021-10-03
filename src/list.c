@@ -22,6 +22,19 @@ struct element *prepend(struct element *list,void *value){
 	tmp->next = list;
 	return tmp;
 }
+struct element *appendElement(struct element *L,struct element* element){
+	struct element *tmp;
+	if(isListEmpty(L))
+		return element;
+	forreach(tmp,L);
+	tmp->next = element;
+	return L;
+}
+
+struct element *prependElement(struct element *list,struct element* element){
+	element->next = list;
+	return element;
+}
 
 struct element *removeFirst(struct element* L ,struct element** removed){
 	struct element* element;

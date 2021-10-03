@@ -33,11 +33,16 @@ void * freeElement(struct element *);
 
 struct element * createList();
 bool isListEmpty(struct element *);
+struct element *prependElement(struct element *,struct element *);
 struct element *prepend(struct element *,void *);
 struct element *append(struct element *,void *);
+struct element *appendElement(struct element *,struct element *);
 struct element *removeFirst(struct element *,struct element**);
 struct element *removeLast(struct element *,struct element**);
 struct element *removeAt(struct element *,int ,struct element**);
+struct element *removeElementAt(struct element *,int ,struct element**);
+struct element *insertElementAt(struct element *,struct element *,int ,struct element*);
+struct element *insertAt(struct element *,void *,int ,void *);
 //struct element *remove(struct element *,void * ,struct element**);
 
 
