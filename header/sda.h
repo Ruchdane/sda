@@ -32,17 +32,19 @@ struct element *createElement(void *);
 void * freeElement(struct element *);
 
 struct element * createList();
-bool isListEmpty(struct element *);
+#define isListEmpty(L) (L == NULL)
 struct element *prependElement(struct element *,struct element *);
-struct element *prepend(struct element *,void *);
-struct element *append(struct element *,void *);
+#define prepend(L,value) prependElement(L,createElement(value))
+#define append(L,value) appendElement(L,createElement(value))
 struct element *appendElement(struct element *,struct element *);
 struct element *removeFirst(struct element *,struct element**);
 struct element *removeLast(struct element *,struct element**);
 struct element *removeAt(struct element *,int ,struct element**);
-struct element *removeElementAt(struct element *,int ,struct element**);
-struct element *insertElementAt(struct element *,struct element *,int ,struct element*);
-struct element *insertAt(struct element *,void *,int ,void *);
+//Pour inserer apres un pointer il suffit d'utiliser 
+// le pointer comme la liste et 1 comme l'index
+struct element *insertElementAt(struct element *,struct element *,int );
+// struct element *insertAt(struct element *,void *,int ,void *);
+#define insertAt(L,value,index) insertElementAt(L,createElement(value),index);
 //struct element *remove(struct element *,void * ,struct element**);
 
 

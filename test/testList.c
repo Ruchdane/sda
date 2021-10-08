@@ -27,8 +27,9 @@ static char *Test_Ajouter_Un_Element_Dans_Une_Liste(){
 	struct element *L = createList(),*tmp,*elements[4] = {createElement((void *)1), createElement((void *)2), createElement((void *)3), createElement((void *)4)};
 	L = appendElement(L,elements[0]);
 	L = appendElement(L,elements[3]);
-	L = insertElementAt(L,elements[1],-1,elements[3]);
-	L = insertElementAt(L,elements[2],2,NULL);
+	L = insertElementAt(L,elements[1],1);
+	L = insertElementAt(L,elements[2],2);
+	mu_assert(!isListEmpty(L),"la liste est vide");
 	foreach(tmp,L){
 		mu_assert(tmp == elements[i],"L'element numéro  n'est pas le bon");
 		i++;
@@ -59,8 +60,8 @@ static char *Test_Ajouter_Une_Valeur_Dans_Une_Liste(){
 	struct element *L = createList(),*tmp;
 	L = append(L,valeurs[0]);
 	L = append(L,valeurs[3]);
-	L = insertAt(L,valeurs[1],-1,valeurs[3]);
-	L = insertAt(L,valeurs[2],2,NULL);
+	L = insertAt(L,valeurs[1],1);
+	L = insertAt(L,valeurs[2],2);
 	foreach(tmp,L){
 		mu_assert((int)(tmp->value) == valeurs[i],"L'element numéro  n'est pas le bon");
 		i++;
@@ -84,7 +85,7 @@ static char *Test_Enledver_Une_Valeur_D_Une_Liste_Vide(){
 	L = append(L,(void *)3);
 	removeAt(L,1,&tmp);
 	mu_assert((int)(tmp->value) == 2,"L'element retirer n'est pas celle demander");
-	mu_assert((int)(L->next->value) == 3,"L'element retirer n'est pas celle demander");
+	mu_assert((int)(L->next->value) == 3,"L'element n'a pas ete bien retirer n'est pas celle demander");
     return 0;
 }
 
