@@ -28,6 +28,10 @@ testList: testList.o element.o list.o | minunit.h $(BINDIR)
 	././bin/testList
 
 
+testFile: testFile.o element.o file.o | minunit.h $(BINDIR)
+	$(CC) $(CFLAGS) -o bin/$@ bin/testFile.o bin/element.o bin/file.o
+	././bin/testFile
+
 $(BINDIR):
 	mkdir $(BINDIR)
 

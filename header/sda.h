@@ -30,6 +30,7 @@ struct element
 #define forreach(element,list) for(element = list;element->next != NULL;element = element->next)
 struct element *createElement(void *);
 void * freeElement(struct element *);
+int elementCount(struct element *);
 
 struct element * createList();
 #define isListEmpty(L) (L == NULL)
@@ -53,6 +54,13 @@ struct file {
     struct element *tail; 
 };
 
+struct file *createFile();
+#define isFileEmpty(F) (F == NULL || F->head == NULL)
+int fileCount(struct file);
+void *defile(struct file *);
+#define enfile(F,value) enfileElement(F,createElement(value))
+void enfileElement(struct file *,void *);
+void freeFile(struct file *);
 struct pile { struct element *head; };
 //#endif // MACRO
 
@@ -61,12 +69,6 @@ struct noeud{
   struct noeud *fils;
   struct noeud *frere;
 };
-
-
-struct file *createFile();
-void *defile(struct file *);
-void enfile(struct file *,void *);
-void afficheFile(struct file *,int);
 
 struct pile *createPile();
 void *depile(struct pile *);

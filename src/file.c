@@ -38,7 +38,7 @@ void *defile(struct file *file){
     return result;
 }
 
-void enfile(struct file *file,void *value){
+void enfileElement(struct file *file,void *value){
     int result;
     void *tmp;
     if(file){
@@ -63,6 +63,12 @@ void enfile(struct file *file,void *value){
     }
 }
 
+void freeFile(struct file * F){
+    struct element *prev = F->head,*tmp;
+    foreach(tmp,prev->next){
+        freeElement(prev);
+    }
+}
 
 // int main(int argc, char const *argv[])
 // {
