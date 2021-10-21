@@ -59,7 +59,7 @@ struct file *createFile();
 int fileCount(struct file);
 void *defile(struct file *);
 #define enfile(F,value) enfileElement(F,createElement(value))
-void enfileElement(struct file *,void *);
+void enfileElement(struct file *,struct element *);
 void freeFile(struct file *);
 struct pile { struct element *head; };
 //#endif // MACRO

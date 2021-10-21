@@ -31,43 +31,48 @@ void *defile(struct file *file){
     if (file->head){
         result = file->head->value;
         tmp = file->head;
-        file->head = file->head->next;
+        if(file->head == file->tail){
+            file->head = NULL;
+            file->tail = NULL;
+        }
+        else
+            file->head = file->head->next;
+
         free(tmp);
     }
     #endif // TABLEAU
     return result;
 }
 
-void enfileElement(struct file *file,void *value){
-    int result;
-    void *tmp;
+void enfileElement(struct file *file,struct element *value){
     if(file){
         #if defined(TABLEAU)
         file->tail++;
         file->Tab = realloc(file->Tab,file->tail + 1);
         file->Tab[file->tail] = value;
         #else
-        struct element *new = malloc(sizeof(struct element));
-        new->value = value;
-        new->next = NULL;
         if(!file->head){
-            file->head = new;
-            file->tail = new;
+            file->head = value;
+            file->tail = value;
         }
-
         else{
-            file->tail->next = new;
-            file->tail = new;
+            file->tail->next = value;
+            file->tail = value;
         }
         #endif // TABLEAU
     }
 }
 
 void freeFile(struct file * F){
-    struct element *prev = F->head,*tmp;
-    foreach(tmp,prev->next){
-        freeElement(prev);
+    struct element *prev = NULL,*tmp;
+    if(F){
+        prev = F->head;
     }
+    if(prev != NULL)
+        foreach(tmp,prev->next){
+            freeElement(prev);
+            prev = tmp; 
+        }
 }
 
 // int main(int argc, char const *argv[])
