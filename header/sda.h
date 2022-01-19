@@ -71,9 +71,11 @@ struct noeud{
 };
 
 struct pile *createPile();
+#define isPileEmpty(P) (P == NULL || P->head == NULL)
 void *depile(struct pile *);
-void empile(struct pile *,void *);
-void affiche(struct pile *,int);
+#define enpile(P,value) enpileElement(P,createElement(value))
+void enpileElement(struct pile *,struct element *);
+void freePile(struct pile *);
 
 
 struct noeud *creerNoeud(int val);

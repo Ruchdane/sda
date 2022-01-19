@@ -40,7 +40,7 @@ void *depile(struct pile *pile){
     return result;
 }
 
-void empile(struct pile *pile,void *value){
+void enpileElement(struct pile *pile,struct element *new){
     int result;
     void *tmp;
     if(pile){
@@ -49,29 +49,23 @@ void empile(struct pile *pile,void *value){
         pile->Tab = realloc(pile->Tab,pile->head + 1);
         pile->Tab[pile->head] = value;
         #else
-        struct element *new = malloc(sizeof(struct element));
-        new->value = value;
         new->next = pile->head;
         pile->head = new;
         #endif // TABLEAU
     }
 }
 
-void affiche(struct pile *pile, int type){
-    void *value;
-    #if defined(TABLEAU)
-    for (int i = pile->head; i >= 0; i--){
-        value = pile->Tab[i];
-    #else
-    for(struct element *element = pile->head;element;element = element->next){
-        value = element->value;
-    #endif // TABLEAU
-    if(type) printf("%d ->",(int)value);
-    else  printf("%c ->",(char)value);
+void freePile(struct pile *P){
+    struct element *prev = NULL,*tmp;
+    if(P){
+        prev = P->head;
     }
-    printf("\n");
+    if(prev != NULL)
+        foreach(tmp,prev->next){
+            freeElement(prev);
+            prev = tmp; 
+        }
 }
-
 // int main(int argc, char const *argv[])
 // {
 //     struct pile *pile = create();
