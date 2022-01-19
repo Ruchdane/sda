@@ -14,7 +14,7 @@ vpath %.o $(BINDIR)
 test%.o: test%.c | $(BINDIR) sda.h
 	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
 
-%.o: %.c | $(BINDIR) minunit.h
+%.o: %.c | $(BINDIRminunit.h )
 	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
 
 distribution: | $(DISTDIR)
@@ -23,20 +23,20 @@ distribution: | $(DISTDIR)
 	sudo cp libsda.so /usr/local/lib/
 	sudo cp header/sda.h /usr/local/include/
 
-testElement: testElement.o element.o | minunit.h $(BINDIR)
+testElement: testElement.o element.o minunit.h | $(BINDIR)
 	$(CC) $(CFLAGS) -o bin/$@ bin/testElement.o bin/element.o
 # ././bin/testElement
 
-testList: testList.o element.o list.o | minunit.h $(BINDIR)
+testList: testList.o element.o list.o minunit.h | $(BINDIR)
 	$(CC) $(CFLAGS) -o bin/$@ bin/testList.o bin/element.o bin/list.o
 # ././bin/testList
 
 
-testFile: testFile.o element.o file.o | minunit.h $(BINDIR)
+testFile: testFile.o element.o file.o minunit.h | $(BINDIR)
 	$(CC) $(CFLAGS) -o bin/$@ bin/testFile.o bin/element.o bin/file.o
 # ././bin/testFile
 
-testPile: testPile.o element.o pile.o | minunit.h $(BINDIR)
+testPile: testPile.o element.o pile.o minunit.h | $(BINDIR)
 	$(CC) $(CFLAGS) -o bin/$@ bin/testPile.o bin/element.o bin/pile.o
 # ././bin/testPile
 

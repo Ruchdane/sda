@@ -1,9 +1,5 @@
-make testPile --dry-run --always-make --keep-going --print-directory
+make testPile --dry-run --keep-going --print-directory
 make: Entering directory '/home/ruchdane/programing/c/algorithmique/sda'
-mkdir bin
-gcc -c -g -I header -o bin/testPile.o test/testPile.c 
-gcc -c -g -I header -o bin/element.o src/element.c 
-gcc -c -g -I header -o bin/pile.o src/pile.c 
 gcc -g -I header -o bin/testPile bin/testPile.o bin/element.o bin/pile.o
 make: Leaving directory '/home/ruchdane/programing/c/algorithmique/sda'
  

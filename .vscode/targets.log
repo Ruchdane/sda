@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jan 19 10:58:24 2022
+# Make data base, printed on Wed Jan 19 12:00:48 2022
 
 # Variables
 
@@ -16,6 +16,7 @@ GDK_BACKEND = x11
 LC_ALL = C
 # makefile (from 'Makefile', line 5)
 BINDIR = bin
+ 
 # environment
 VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-436bdd64-881e-448e-b6ca-c48b195875a2.sock
 # makefile (from 'Makefile', line 7)
@@ -225,9 +226,9 @@ GDMSESSION = lightdm-xsession
 # src (device 36, inode 1262520): No files, no impossibilities so far.
 # . (device 36, inode 1261320): 12 files, no impossibilities.
 # test (device 36, inode 1262524): 3 files, no impossibilities so far.
-# bin (device 36, inode 2728871): 5 files, no impossibilities.
+# bin (device 36, inode 2728871): 6 files, no impossibilities.
 
-# 23 files, no impossibilities in 5 directories.
+# 24 files, no impossibilities in 5 directories.
 
 # Implicit Rules
 
@@ -235,7 +236,7 @@ test%.o: test%.c | bin sda.h
 #  recipe to execute (from 'Makefile', line 15):
 	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
 
-%.o: %.c | bin minunit.h
+%.o: %.c
 #  recipe to execute (from 'Makefile', line 18):
 	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
 
@@ -256,7 +257,7 @@ testFile.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-testFile: testFile.o element.o file.o | minunit.h bin
+testFile: testFile.o element.o file.o minunit.h | bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -279,7 +280,7 @@ testList.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-19 10:57:16.129018249
+#  Last modified 2022-01-19 12:00:45.672850642
 #  File has been updated.
 #  Successfully updated.
 
@@ -293,10 +294,10 @@ distribution: | dist
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 21):
 	$(CC) -fPIC -c -g -I ../header  ../src/element.c ../src/file.c ../src/list.c
 	gcc -shared -o libsda.so *.o
+ 
 	sudo cp libsda.so /usr/local/lib/
 	sudo cp header/sda.h /usr/local/include/
 
@@ -320,7 +321,7 @@ file.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-testElement: testElement.o element.o | minunit.h bin
+testElement: testElement.o element.o minunit.h | bin
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -386,20 +387,20 @@ element.o:
 
 bin:
 #  Implicit rule search has not been done.
-#  Last modified 2022-01-19 10:51:17.805034014
+#  Last modified 2022-01-19 12:00:24.064851593
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 44):
 	mkdir $(BINDIR)
 
-testList: testList.o element.o list.o | minunit.h bin
+testList: testList.o element.o list.o minunit.h | bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 31):
 	$(CC) $(CFLAGS) -o bin/$@ bin/testList.o bin/element.o bin/list.o
 
-testPile: testPile.o element.o pile.o | minunit.h bin
+testPile: testPile.o element.o pile.o minunit.h | bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -440,9 +441,9 @@ vpath %.o bin
 # strcache buffers: 1 (0) / strings = 43 / storage = 369 B / avg = 8 B
 # current buf: size = 8162 B / used = 369 B / count = 43 / avg = 8 B
 
-# strcache performance: lookups = 106 / hit rate = 59%
+# strcache performance: lookups = 105 / hit rate = 59%
 # hash-table stats:
-# Load=43/8192=1%, Rehash=0, Collisions=0/106=0%
-# Finished Make data base on Wed Jan 19 10:58:24 2022
+# Load=43/8192=1%, Rehash=0, Collisions=0/105=0%
+# Finished Make data base on Wed Jan 19 12:00:48 2022
 
  
