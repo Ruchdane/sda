@@ -1,0 +1,448 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Jan 19 10:58:24 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 5)
+BINDIR = bin
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-436bdd64-881e-448e-b6ca-c48b195875a2.sock
+# makefile (from 'Makefile', line 7)
+OBJECT = element.c file.c list.c
+# environment
+VSCODE_CWD = /home/ruchdane
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/ruchdane/programing/c/algorithmique/sda
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/mate:/home/ruchdane/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/ruchdane/.config/VSCodium/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/ruchdane/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 6)
+DISTDIR = dist
+# makefile
+CURDIR := /home/ruchdane/programing/c/algorithmique/sda
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-OTzG2oyJ6WdF/agent.1759
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCodium","submitURL":"","uploadToServer":false}
+# environment
+XDG_SESSION_DESKTOP = lightdm-xsession
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 5349
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/origin:@/tmp/.ICE-unix/1759,unix/origin:/tmp/.ICE-unix/1759
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = codium-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+QT_SCALE_FACTOR = 1
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/ruchdane/.config/VSCodium/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_US:en
+# automatic
+^F = $(notdir $^)
+# environment
+MATE_DESKTOP_SESSION_ID = this-is-deprecated
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_AUTOSTART_ID = 10f942d8213223fda0164258342081619000000017590016
+# environment
+XDG_SEAT = seat0
+# environment
+GTK_IM_MODULE = ibus
+# environment
+XDG_CURRENT_DESKTOP = MATE
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = lightdm-xsession
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = MATE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+CLUTTER_IM_MODULE = ibus
+# environment
+LOGNAME = ruchdane
+# environment
+XDG_VTNR = 7
+# makefile
+.DEFAULT_GOAL := all
+# environment
+DISPLAY = :0.0
+# environment
+USER = ruchdane
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+SSH_AGENT_PID = 1838
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 4)
+CFLAGS = -g -I header
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GTK_OVERLAY_SCROLLING = 0
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/ruchdane
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-57df962d-1.63.2-main.sock
+# environment
+XDG_SESSION_ID = 3
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm/data/ruchdane
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 3)
+CC = gcc
+# environment
+GDMSESSION = lightdm-xsession
+# variable set hash-table stats:
+# Load=101/1024=10%, Rehash=0, Collisions=4/146=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# header (device 36, inode 1275670): 3 files, no impossibilities so far.
+# src (device 36, inode 1262520): No files, no impossibilities so far.
+# . (device 36, inode 1261320): 12 files, no impossibilities.
+# test (device 36, inode 1262524): 3 files, no impossibilities so far.
+# bin (device 36, inode 2728871): 5 files, no impossibilities.
+
+# 23 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+test%.o: test%.c | bin sda.h
+#  recipe to execute (from 'Makefile', line 15):
+	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
+
+%.o: %.c | bin minunit.h
+#  recipe to execute (from 'Makefile', line 18):
+	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+dist:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 46):
+	mkdir $(DISTDIR)
+	
+
+# Not a target:
+testFile.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+testFile: testFile.o element.o file.o | minunit.h bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	$(CC) $(CFLAGS) -o bin/$@ bin/testFile.o bin/element.o bin/file.o
+
+# Not a target:
+test/testElement.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-22 13:04:01.945939959
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+testList.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-19 10:57:16.129018249
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+list.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distribution: | dist
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 21):
+	$(CC) -fPIC -c -g -I ../header  ../src/element.c ../src/file.c ../src/list.c
+	gcc -shared -o libsda.so *.o
+	sudo cp libsda.so /usr/local/lib/
+	sudo cp header/sda.h /usr/local/include/
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 50):
+	-rm -r bin
+
+# Not a target:
+minunit.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+file.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+testElement: testElement.o element.o | minunit.h bin
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -o bin/$@ bin/testElement.o bin/element.o
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: testElement
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+testElement.o: test/testElement.c | bin header/sda.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Element'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := testElement.o
+# automatic
+# * := Element
+# automatic
+# < := test/testElement.c
+# automatic
+# + := test/testElement.c
+# automatic
+# % := 
+# automatic
+# ^ := test/testElement.c
+# automatic
+# ? := test/testElement.c
+# automatic
+# | := bin header/sda.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from 'Makefile', line 15):
+	$(CC) -c $(CFLAGS) -o bin/$@ $^ 
+
+# Not a target:
+testPile.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+element.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin:
+#  Implicit rule search has not been done.
+#  Last modified 2022-01-19 10:51:17.805034014
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 44):
+	mkdir $(BINDIR)
+
+testList: testList.o element.o list.o | minunit.h bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 31):
+	$(CC) $(CFLAGS) -o bin/$@ bin/testList.o bin/element.o bin/list.o
+
+testPile: testPile.o element.o pile.o | minunit.h bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 40):
+	$(CC) $(CFLAGS) -o bin/$@ bin/testPile.o bin/element.o bin/pile.o
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+header/sda.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-19 09:17:39.410996588
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pile.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=24/1024=2%, Rehash=0, Collisions=0/82=0%
+# VPATH Search Paths
+
+vpath %.h header
+vpath test%.c test
+vpath %.c src:test
+vpath %.o bin
+
+# 4 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 43 / storage = 369 B / avg = 8 B
+# current buf: size = 8162 B / used = 369 B / count = 43 / avg = 8 B
+
+# strcache performance: lookups = 106 / hit rate = 59%
+# hash-table stats:
+# Load=43/8192=1%, Rehash=0, Collisions=0/106=0%
+# Finished Make data base on Wed Jan 19 10:58:24 2022
+
+ 

@@ -6,5 +6,17 @@
         "typeinfo": "c",
         "sda.h": "c",
         "cstdio": "c"
-    }
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/ruchdane/programing/c/algorithmique/sda/bin",
+            "binaryPath": "/home/ruchdane/programing/c/algorithmique/sda/bin/testElement",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/ruchdane/programing/c/algorithmique/sda/bin",
+            "binaryPath": "/home/ruchdane/programing/c/algorithmique/sda/bin/testPile",
+            "binaryArgs": []
+        }
+    ]
 }
